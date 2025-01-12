@@ -1,0 +1,61 @@
+import ScriptCopyBtn from "@/components/ui/script-copy-btn";
+
+export function CopyPGPKey() {
+const customCommandMap = {
+    pgpKey: `-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+o3fmspPiils=
+=i+va
+-----END PGP PUBLIC KEY BLOCK-----`,
+};
+  return (
+    <>
+      <ScriptCopyBtn
+        showMultiplePackageOptions={false}
+        codeLanguage="shell"
+        lightTheme="nord"
+        darkTheme="vitesse-dark"
+        commandMap={customCommandMap}
+        codeString="// Copy my Public PGP Key here --->"
+      />
+    </>
+  );
+}
+
+export default CopyPGPKey;
