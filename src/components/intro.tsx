@@ -7,11 +7,11 @@ import ShimmerButton from "./ui/shimmer-button";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6 justify-center items-center p-4">
+    <div className="flex flex-col md:flex-row gap-6 justify-center items-center p-4 responsive-container">
       <MagicCard className="cursor-pointer flex flex-col md:flex-row gap-6 items-center justify-center text-4xl shadow-xl p-4 md:p-6"
         gradientColor={"#D9D9D955"}>
         <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-center justify-center w-full">
-          <div className="w-full md:w-3/12 flex justify-center items-center max-w-[250px] min-w-[250px]">
+          <div className="w-full md:w-3/12 flex justify-center items-center max-w-[250px] min-w-[250px] responsive-image">
             <Image 
               src="/images/fotoandrei.png"
               alt="Andrei"
@@ -21,7 +21,7 @@ const Intro = () => {
               className="rounded-full border-gray-300 shadow-xl object-cover"
             />
           </div>
-          <div className="flex flex-col gap-4 w-full md:w-7/12 text-center md:text-left">
+          <div className="flex flex-col gap-4 w-full md:w-7/12 text-center md:text-left responsive-text">
             <div>
               <h1 className="text-4xl font-bold">Hey, I&#39;m Andrei!</h1>
               <div className="flex flex-col gap-4">

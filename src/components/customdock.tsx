@@ -111,7 +111,7 @@ export function CustomDock() {
   const { setView } = useView();
 
   return (
-    <div className="fixed bottom-10 left-0 right-0 z-50 flex justify-center">
+    <div className="fixed bottom-10 left-0 right-0 z-50 flex justify-center md:bottom-20 lg:bottom-30">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
