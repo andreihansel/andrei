@@ -33,9 +33,11 @@ export function AlertDialogDemo() {
             </AlertDialogTrigger>
             <AlertDialogContent className={cn(
                     "fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]",
+                    "w-[90%] max-w-md min-h-fit", 
+                    "py-4",
                     "font-[family-name:var(--font-geist-sans)]",
-                    "w-[90%] max-w-md max-h-[85vh] overflow-y-auto",
-                    "md:max-h-none md:overflow-visible"
+                    "flex flex-col gap-4",
+                    "md:py-6"
                 )}>
                 <AlertDialogHeader>
                     <AlertDialogTitle>Wanna Communicate Securely? 🔒</AlertDialogTitle>

@@ -52,7 +52,7 @@ o3fmspPiils=
         lightTheme="nord"
         darkTheme="vitesse-dark"
         commandMap={customCommandMap}
-        codeString="// Copy my Public PGP Key here --->"
+        codeString="// My Public PGP Key"
       />
     </>
   );

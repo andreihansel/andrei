@@ -10,11 +10,9 @@ const slugs = [
   "vercel",
   "git",
   "github",
-  "visualstudiocode",
   "figma",
   "metasploit",
   "kalilinux",
-  "csharp",
   "mysql",
 ];
 
