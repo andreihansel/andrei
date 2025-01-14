@@ -110,7 +110,7 @@ const features = [
     href: "#",
     cta: "Learn more",
     background: (
-        <div className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105">
+        <div className="absolute h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105">
         <SafariDemo />
       </div>
     ),

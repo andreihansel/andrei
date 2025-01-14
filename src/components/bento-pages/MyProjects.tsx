@@ -1,5 +1,4 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Safari from "../ui/safari";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
@@ -135,11 +134,19 @@ const MyProjects = () => {
                     </TabsTrigger>
                 </TabsList>
 
-                <TabsContent value="development" className="mt-5 text">
+                <TabsContent value="development" className="mt-5 mx-5 text">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {DevelopmentProjects.map((item, index) => (
                             <div key={index} className="flex flex-col border rounded-md shadow-xl">
-                                <Safari url="andreihansel" videoSrc={item.previewVideo} className="w-full h-full" />
+                                <div className="aspect-video w-full relative">
+                                    <video 
+                                        src={item.previewVideo} 
+                                        autoPlay 
+                                        muted 
+                                        loop 
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    ></video>
+                                </div>
                                 <div className="flex flex-col gap-2 p-4">
                                     <h2 className="text-lg font-bold">{item.title}</h2>
                                     <p className="text-sm text-gray-500">{item.description}</p>
@@ -161,10 +168,18 @@ const MyProjects = () => {
                     </div>
                 </TabsContent>
                 <TabsContent value="cybersecurity" className="mx-5 mt-5">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {CybersecProjects.map((item, index) => (
                             <div key={index} className="flex flex-col border rounded-md shadow-xl">
-                                <Safari url="andreihansel" videoSrc={item.previewVideo} className="w-full h-full" />
+                                <div className="aspect-video w-full relative">
+                                    <video 
+                                        src={item.previewVideo} 
+                                        autoPlay 
+                                        muted 
+                                        loop 
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    ></video>
+                                </div>
                                 <div className="flex flex-col gap-2 p-4">
                                     <h2 className="text-lg font-bold">{item.title}</h2>
                                     <p className="text-sm text-gray-500">{item.description}</p>
@@ -175,6 +190,7 @@ const MyProjects = () => {
                                             </div>
                                         ))}
                                     </div>
+                                
                                 </div>
                             </div>
                         ))}
@@ -184,7 +200,15 @@ const MyProjects = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {OtherProjects.map((item, index) => (
                             <div key={index} className="flex flex-col border rounded-md shadow-xl">
-                                <Safari url="andreihansel" videoSrc={item.previewVideo} className="w-full h-full" />
+                                <div className="aspect-video w-full relative">
+                                    <video 
+                                        src={item.previewVideo} 
+                                        autoPlay 
+                                        muted 
+                                        loop 
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    ></video>
+                                </div>
                                 <div className="flex flex-col gap-2 p-4">
                                     <h2 className="text-lg font-bold">{item.title}</h2>
                                     <p className="text-sm text-gray-500">{item.description}</p>

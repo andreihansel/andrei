@@ -1,13 +1,8 @@
-import Safari from "@/components/ui/safari";
 
 export function SafariDemo() {
   return (
-    <div className="relative">
-      <Safari
-        url="andreihansel"
-        className="size-full"
-        videoSrc="/videos/reverseshell.mp4"
-      />
+    <div className="w-full h-full">
+    <video src="/videos/reverseshell.mp4" autoPlay muted loop className="w-full h-full object-cover"></video>
     </div>
   );
 }

@@ -23,6 +23,11 @@ export default function Safari({
       viewBox={`0 0 ${width} ${height}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{
+        maxWidth: `${width}px`,
+        maxHeight: `${height}px`,
+        overflow: "hidden",
+      }}
       {...props}
     >
       <g clipPath="url(#path0)">
@@ -58,6 +63,10 @@ export default function Safari({
           cx="67"
           cy="25"
           r="6"
+          className="fill-[#E5E5E5] dark:fill-[#404040]"
+        />
+        <path
+          d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z"
           className="fill-[#E5E5E5] dark:fill-[#404040]"
         />
         <path
@@ -130,36 +139,60 @@ export default function Safari({
           />
         </g>
         {imageSrc && (
-          <image
-            href={imageSrc}
-            width="1200"
-            height="700"
-            x="1"
-            y="52"
-            preserveAspectRatio="xMidYMid slice"
-            clipPath="url(#roundedBottom)"
-          />
-        )}
-        {videoSrc && (
-          <foreignObject
-            x="1"
-            y="52"
-            width="1200"
-            height="700"
-            preserveAspectRatio="xMidYMid slice"
-            clipPath="url(#roundedBottom)"
-          >
+        <image
+          href={imageSrc}
+          width="1200"
+          height="700"
+          x="1"
+          y="52"
+          preserveAspectRatio="xMidYMid slice"
+          clipPath="url(#roundedBottom)"
+        />
+      )}
+      {videoSrc && (
+        <foreignObject
+          x="1"
+          y="52"
+          width="1200"
+          height="700"
+          style={{ overflow: "hidden" }}
+          clipPath="url(#roundedBottom)"
+        >
+          <div style={{ 
+            width: '100%', 
+            height: '100%', 
+            position: 'relative',
+            overflow: 'hidden',
+            // Safari-specific fixes
+            WebkitTransformStyle: 'preserve-3d',
+            WebkitPerspective: '1000px'
+          }}>
             <video
-              className="size-full overflow-hidden object-cover"
+              style={{
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                maxWidth: '100%',
+                maxHeight: '100%',
+                // Safari-specific fixes
+                WebkitTransform: 'translateZ(0)',
+                WebkitBackfaceVisibility: 'hidden',
+                WebkitPerspective: '1000px',
+                WebkitAppearance: 'none',
+                transform: 'translateZ(0)'
+              }}
               src={videoSrc}
               autoPlay
               loop
               muted
               playsInline
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
-          </foreignObject>
-        )}
+          </div>
+        </foreignObject>
+      )}
       </g>
       <defs>
         <clipPath id="path0">
