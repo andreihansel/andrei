@@ -144,6 +144,7 @@ const MyProjects = () => {
                                         autoPlay 
                                         muted 
                                         loop 
+                                        playsInline
                                         className="absolute inset-0 w-full h-full object-cover"
                                     ></video>
                                 </div>
@@ -177,6 +178,7 @@ const MyProjects = () => {
                                         autoPlay 
                                         muted 
                                         loop 
+                                        playsInline
                                         className="absolute inset-0 w-full h-full object-cover"
                                     ></video>
                                 </div>
@@ -205,7 +207,8 @@ const MyProjects = () => {
                                         src={item.previewVideo} 
                                         autoPlay 
                                         muted 
-                                        loop 
+                                        loop
+                                        playsInline 
                                         className="absolute inset-0 w-full h-full object-cover"
                                     ></video>
                                 </div>
