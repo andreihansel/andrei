@@ -31,7 +31,12 @@ export function AlertDialogDemo() {
                     <KeyRound aria-label="PGP Key" className="size-12" />
                 </div>
             </AlertDialogTrigger>
-            <AlertDialogContent className="font-[family-name:var(--font-geist-sans)]">
+            <AlertDialogContent className={cn(
+                    "fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]",
+                    "font-[family-name:var(--font-geist-sans)]",
+                    "w-[90%] max-w-md max-h-[85vh] overflow-y-auto",
+                    "md:max-h-none md:overflow-visible"
+                )}>
                 <AlertDialogHeader>
                     <AlertDialogTitle>Wanna Communicate Securely? 🔒</AlertDialogTitle>
                     <AlertDialogDescription className="text-justify">
