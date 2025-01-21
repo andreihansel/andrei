@@ -25,10 +25,10 @@ export function HoverCardDemo() {
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">@andreihansel</h4>
             <p className="text-sm italic">
-              hmu.bisangonten@gmail.com
+              hmu@tamesec.me
             </p>
             <p className="text-sm italic">
-              andrei_hansel132@yahoo.com
+              hmu.bisangonten@gmail.com
             </p>
           </div>
         </div>

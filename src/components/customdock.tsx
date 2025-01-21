@@ -100,7 +100,7 @@ const DATA = {
       },
       Email: {
         name: "Send Email",
-        url: "mailto:andrei_hansel132@yahoo.com",
+        url: "mailto:hmu@tamesec.me",
         icon: Icons.email,
       },
     },
