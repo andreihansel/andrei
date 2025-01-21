@@ -84,7 +84,7 @@ const EducationData: EducationItem[] = [
         educationInstitute: "Universitas Brawijaya",
         educationTitle: "🎓 Bachelor's Degree in Information Systems",
         description: [
-            "Graduated in 3.5 years with a GPA of 3.5/4.0, with a focus on Business Process and Cybersecurity.",
+            "Graduated in 3.5 years with a GPA of 3.58/4.0, with a focus on Business Process and Cybersecurity.",
             "Participated in various organizations and events, such as the University Student Executive Board (EM UB).",
             "Won several debating competitions to bring honor to the university and my faculty.",
             "Scored an A on my final thesis project, which was about the evaluation and implementation of a business process in the cooking oil industry to mitigate the current supply and demand imbalance in Indonesia.",
